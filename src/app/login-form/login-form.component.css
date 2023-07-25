@@ -1,0 +1,681 @@
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+@keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+@keyframes Slide-in{
+    0%{
+        transform: skew(0deg) translateX(-20px);
+    }
+    28%{
+        transform: skew(0deg);
+    }
+}
+@keyframes Slide-out{
+    0%{
+        transform: skew(0deg) translateX(20px);
+    }
+    28%{
+        transform: skew(0deg);
+    }
+}
+@keyframes Slide-loginform{
+    0%{
+        transform: skew(-45deg) translateY(-10rem);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+@keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+}
+:host{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 8px 0;
+}
+p{
+    margin: 0;
+}
+
+/* BACKGROUND */
+.background-style{
+    background: linear-gradient(145deg,#0d47a1,#42a5f5);
+    color: #000000de;
+    z-index: -1;
+}
+.slice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    min-height: 490px;
+    height: 80vh;
+    max-height: 560px;
+    box-sizing: border-box;
+    padding: 48px 48px 32px;
+    overflow: hidden;
+    transform: skewY(8deg);
+    transform-origin: 100%;
+}
+
+/* HEADER */
+.content-header{
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.space{
+    flex: 1;
+}
+.angularlg-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.angularlg-one #angularlg-one{
+    margin: 0 16px;
+    width: 150px; 
+    height: 40px; 
+}
+.angularlg-two #angularlg-two{
+    width: 44px; 
+    height: 45px; 
+}
+.angularlg-two button{
+    height: 60px;
+}
+.angularlg-two mat-icon{
+    color: white;
+    height: 50px;
+    width: 45px;
+    font-size: 24px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.content-header #twitter-logo {
+    height: 35px;
+    border-radius: 0;
+}
+.content-header #youtube-logo {
+    height: 28px;
+    margin: 0 16px;
+}
+.content-header #twitter-logo:hover,
+.content-header #youtube-logo:hover {
+    opacity: 0.8;
+}
+#login-button{
+    border: none;
+    padding: 5px;
+    width: 70px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #2776D2; 
+}
+/* MAIN CONTENT */
+.Main-content{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+/* FIRST-CONTENT */
+.content-main{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: -30px;
+}
+#angular-icon{
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+}
+.content-main-text p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 35px;
+}
+.content-main-text button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #2776D2; 
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    height: 45px;
+    padding: 0 25px 0 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.content-main-text button:hover{
+    color: #00346e;
+    text-decoration: underline;
+}
+.login-forms{
+    width: 100%;
+}
+.login-forms h3{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.user-form,.pass-form{
+    display: flex;  
+    justify-content: center;
+}
+.login-forms mat-form-field{
+    width: 90%;
+    cursor: pointer;
+}
+.login-forms mat-icon{
+    color: white;
+    display: flex;
+    margin-top: -10px;
+}
+::ng-deep .mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input {
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 14px;
+}
+::ng-deep .mdc-text-field .mdc-text-field__input{
+    caret-color: white; 
+    cursor: pointer;
+}
+mat-error{
+    font-family: 'Poppins', sans-serif; 
+    margin-top: -2px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.login-forms mat-label{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+#clear-input{
+    background-color: transparent;
+    border: none;
+    padding-right: 10px;
+    margin-top: -5px;
+}
+#hide-password{
+    background-color: transparent;
+    border: none;
+    padding-right: 10px;
+    margin-top: -5px;
+}
+:host ::ng-deep .mdc-floating-label--required:not(.mdc-floating-label--hide-required-marker)::after {
+    margin-left: 1px;
+    margin-right: 0px;
+    content: none;
+}
+:host ::ng-deep .mat-mdc-text-field-wrapper {
+    height: 40px;
+    flex: auto;
+}
+:host ::ng-deep .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 10px;
+    padding-bottom: 16px;
+}
+::ng-deep .mdc-notched-outline > * {
+    border-color: white !important;
+}
+/* ::ng-deep .mdc-text-field--focused .mdc-notched-outline > * {
+    border-color: green !important;
+} */
+::ng-deep .mdc-text-field--invalid .mdc-notched-outline > * {
+    border-color: red !important;
+}
+.remember-me{
+    display: flex;
+}
+.remember-me input{
+    margin-top: 0px;
+    margin-right: 5px;
+}
+.settings-form{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+}
+.settings-form span:hover{
+    color: #0c4f9c;
+    cursor: pointer;
+}
+.login-forms #login{
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #2776D2;
+    background-color: white;
+    border: none;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.login-forms #login:hover{
+    color: white;
+    background-color: #2776D2;
+    width: 93%;
+    transition: .15s ease-in;
+}
+.social-forms{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-forms p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.social-forms ul{
+    list-style-type: none;
+    display: flex;
+}
+.social-forms li{
+    margin-right: 2px;
+    margin-left: 2px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+#Facebook-logo{
+    background-color: white;
+    border-radius: 1px;
+}
+#Google-logo{
+    background-color: white;
+    border-radius: 1px;
+}
+#Twitter-logo{
+    background-color: white;
+    border-radius: 1px;
+}
+.sign-up{
+    width: 100%;
+}
+.sign-up button{
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #2776D2;
+    background-color: white;
+    border: none;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sign-up button:hover{
+    color: white;
+    background-color: #2776D2;
+    width: 93%;
+    transition: .15s ease-in;
+}
+/* SECOND CONTENT */
+.content-loginform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 30px;
+    border: 2px solid white;
+    margin-top: 30px;
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#rocket-icon{
+    width: 90px;
+    position: absolute;
+    left: -10px;
+    top: -24px;
+}
+.content{
+    all: unset;
+    border-radius: 5px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+}
+.content.login-highlight {
+    background-color: white;
+    border: none;
+    width: auto;
+    min-width: 30%;
+    position: relative;
+}
+.content.content-size{
+    height: 16px;
+    width: 298px;
+}
+.waviy {
+    position: relative;
+    margin-left: 80px;
+}
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #2776D2;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+/* SECONDARY CONTENT */
+.second{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+.second h1{
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    font-weight: bold;
+    font-size: 30px;
+}
+.angular-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.content-one,.content-two,.content-three{
+    width: 300px;
+    margin-right: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #2776D2;
+    font-weight: bold;
+    font-size: 18px;
+}
+#content-one:hover,#content-two:hover,#content-three:hover{
+    text-decoration: underline;
+}
+.angular-content button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #2776D2; 
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    width: 180px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.angular-content button:hover{
+    color: #0c4f9c;
+    text-decoration: underline;
+}
+.content-footer{
+    background: linear-gradient(180deg,#2776D2,#1976D2);
+    margin-top: 50px;
+    z-index: -1;
+}
+.footer-background{
+    background: linear-gradient(180deg,#2776D2,#1976D2);
+    padding-bottom: 50px;
+    padding-top: 80px;
+    margin-top: 80px;
+    position: relative;
+    z-index: 0;
+}
+.footer-image{
+    display: block;
+    position: relative;
+    z-index: 0;
+    overflow: auto;
+}
+.footer-background::after{
+    content: "   ";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: url('https://angular.io/assets/images/logos/angular/angular_whiteTransparent_withMargin.png') top 0 left 0 repeat,url('https://angular.io/assets/images/logos/angular/angular_whiteTransparent_withMargin.png') top 80px left 160px repeat;
+    opacity: .05;
+    background-size: 320px auto;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+    max-width: 50em;
+    margin: 0 auto 40px;
+    justify-content: center;
+}
+.resources,.help,.community,.languages{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-left: 2%;
+}
+.resources p,.help p,.community p,.languages p{
+    margin-bottom: 15px;
+}
+.resources li,.help li,.community li,.languages li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.resources li:hover,.help li:hover,.community li:hover,.languages li:hover{
+    text-decoration: underline;
+}
+.powered-by{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-top: 50px;
+}
+.powered-by a{
+    color: white;
+}
+
+/* -------------------------------------------------------------------------------------575 */
+@media screen and (max-width: 575px){
+    .slice {
+        transform: skewY(0deg);
+        transform-origin: 100%;
+        height: 0px;
+    }
+    .content-header{
+        background-color: #1976D2;
+    }
+    #angular-icon{
+        width: 250px;
+        transition: ease all .5s;
+    }
+    .Main-content{
+        margin-top: 8px;
+    }
+    .content-main-text{
+        margin-top: 14px;
+    }
+    .content-main-text p{
+        transition: ease all .5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 30px;    
+    }
+    .second h1{
+        margin-left: 3%;
+    }
+    .secondary-content{
+        margin-top: 50px;
+    }
+}
+/* -------------------------------------------------------------------------------------600 */
+@media screen and (max-width: 600px){
+    .angular-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .content-one,.content-two,.content-three{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: ease all .5s;
+    }
+    .content-two,.content-three{
+        margin-top: 40px;
+    }
+    #one,#two,#three{
+        margin-top: 20px;
+        width: 60%;
+    }
+}
+/* -------------------------------------------------------------------------------------720 */
+@media screen and (max-width: 720px) {
+    .resources,.help,.community,.languages{
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+    .footer-content{
+        grid-template-columns: repeat(2,calc(30% - 12px));
+        transition: ease all .5s;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        min-height: 750px;
+        height: 80vh;
+        max-height: 490px;
+        box-sizing: border-box;
+        overflow: hidden;
+        transform: skewY(0deg);
+        transform-origin: 100%;
+    }
+}
+/* -------------------------------------------------------------------------------------1040 */
+@media screen and (max-width: 1040px) {
+    .content-main {
+      display: flex;
+      flex-direction: column;
+      margin-top: 28px;
+    }
+    #angular-icon{
+        max-width: 300px;
+        height: auto;
+        margin-top: -35px;
+    }
+    .content-main-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .secondary-content{
+        margin-left: 1.3%;
+    }
+}
+/* ------------------------------------------------------------------------------------1150 */
+@media screen and (max-width: 1150px) {
+    .content,.content-loginform {
+        display: none;
+    }
+    .content-header .login-button{
+        display: block;
+        margin-right: 1.3%;
+        animation: Slide-out 1s ease-out;
+    }
+    .angularlg-one #angularlg-one{
+
+        display: none;
+    }
+    .angularlg-one .angularlg-two{
+        display: block;
+        animation: fade-in 1s;
+        animation: Slide-in 1s ease-in;
+    }
+    .content-header #youtube-logo{
+        border-right: 1px solid white;
+        padding-right: 10px;
+    }
+}
+/* -------------------------------------------------------------------------------1150-1160 */
+@media screen and (min-width: 1150px) and (max-width: 1160px) {
+    .angularlg-one #angularlg-one{
+        animation: fade-in 1s;
+        animation: Slide-out 1s ease-out;
+    }
+    .content-header #login-button{
+        margin-right: 1.3%;
+    }
+    .content-loginform{
+        transform: translateX(500px);
+        transition: all .3s linear;
+        animation: fade-out 1s;
+    }
+}
+/* -----------------------------------------------------------------------------------1920 */
+@media screen and (max-width: 1920px) { 
+    .login-button{
+        display: none;
+    } 
+    .angularlg-two{ 
+        display: none;
+    }
+}
+/* ---------------------------------------------------------------------------------------- */
